@@ -20,3 +20,10 @@ h3 {
 .slideshow {
     border-radius: 50%;
 }
+.korok-btn {
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+    background: linear-gradient(yellow,red);
+    margin-bottom: 10px;
+}
