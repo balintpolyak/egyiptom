@@ -67,41 +67,55 @@
         </div>
         <div class="row">
             <h3>Történelme</h3>
-            <div class="col-lg-4 button-container">
+            <div class="col-lg-3 button-container">
                 <button class="korok-btn" onclick="displayText(1)">Őskör</button><br>
                 <button class="korok-btn" onclick="displayText(2)">Ókor</button><br>
                 <button class="korok-btn" onclick="displayText(3)">Középkor</button><br>
                 <button class="korok-btn" onclick="displayText(4)">Újkor</button><br>
                 <button class="korok-btn" onclick="displayText(5)">Jelenkor</button><br>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-9">
               <div class="text-container">
-                <p class="text" id="text1">Korai dinasztikus időszak (i. e. 3150–2686)
+                <p class="text active" id="text1">Korai dinasztikus időszak (i. e. 3150–2686)
                   Fő cikk: Korai dinasztikus időszak (Egyiptom)
                   A korai dinasztikus időszak hozzávetőlegesen a korai mezopotámiai sumér - akkád civilizáció és az ősi Elam korabeli volt . Az időszámításunk előtti harmadik században élt egyiptomi pap, Manetho a királyok hosszú sorát Menestől saját koráig 30 dinasztiába csoportosította, ez a rendszer ma is használatos. Hivatalos történelmét a "Meni" (vagy görögül Menes) nevű királlyal kezdte, akiről azt hitték, hogy egyesítette Felső- és Alsó-Egyiptom két királyságát .</p>
                 <p class="text" id="text2">...</p>
                 <p class="text" id="text3">...</p>
                 <p class="text" id="text4">...</p>
-                <p class="text" id="text5">....</p>
+                <p class="text" id="text5">...</p>
               </div>
             </div>
         </div>
+        <div class="row">
+          <div class="col-12 video">
+            <h3>Videó Egyiptom titkairól</h3>
+            <iframe width="890" height="500"
+            src="https://www.youtube.com/embed/d98u4k0NDJI">
+            </iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="">
+              <p id="ajanlas">Felkeltettük az érdeklődését? Nézze meg javaslatunkat egy kirándulásra!</p>
+            </a>
+          </div>
+        </div>
     </div>
     <script>
+      document.getElementById('text1').classList.add('active');
+    
       function displayText(buttonNumber) {
-        // Minden elrejtése
         var texts = document.querySelectorAll('.text');
         texts.forEach(function(text) {
-          text.style.display = 'none';
+          text.classList.remove('active');
         });
     
-        // Klikkelésre mutassa a szöveget
         var textId = 'text' + buttonNumber;
         var textElement = document.getElementById(textId);
         if (textElement) {
-          textElement.style.display = 'block';
+          textElement.classList.add('active');
         }
       }
     </script>
-</body>
 </html> 
