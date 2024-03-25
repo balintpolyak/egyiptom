@@ -1,6 +1,6 @@
 body {
     font-size: 1.5rem;
-    background: -webkit-linear-gradient(rgb(209, 166, 67), rgb(190, 114, 0)); 
+    /* background: -webkit-linear-gradient(rgb(209, 166, 67), rgb(190, 114, 0));  */
 }
 h1 {
     text-align: center;
@@ -12,6 +12,8 @@ p {
 }
 h3 {
     text-align: center;
-    color: white;
+    /* color: white; */
     font-size: 2.65rem;
+    padding: 25px;
+    margin-top: 30px;
 }
