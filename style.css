@@ -27,4 +27,8 @@ h3 {
     background: linear-gradient(yellow,red);
     margin-bottom: 10px;
 }
+.text {
+    display: none;
+    margin-top: 10px;
+  }
 

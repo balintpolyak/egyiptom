@@ -67,17 +67,41 @@
         </div>
         <div class="row">
             <h3>Történelme</h3>
-            <div class="col-lg-4">
-                <button class="korok-btn">Őskör</button><br>
-                <button class="korok-btn">Ókor</button><br>
-                <button class="korok-btn">Középkor</button><br>
-                <button class="korok-btn">Újkor</button><br>
-                <button class="korok-btn">Jelenkor</button><br>
+            <div class="col-lg-4 button-container">
+                <button class="korok-btn" onclick="displayText(1)">Őskör</button><br>
+                <button class="korok-btn" onclick="displayText(2)">Ókor</button><br>
+                <button class="korok-btn" onclick="displayText(3)">Középkor</button><br>
+                <button class="korok-btn" onclick="displayText(4)">Újkor</button><br>
+                <button class="korok-btn" onclick="displayText(5)">Jelenkor</button><br>
             </div>
             <div class="col-lg-8">
-
+              <div class="text-container">
+                <p class="text" id="text1">Korai dinasztikus időszak (i. e. 3150–2686)
+                  Fő cikk: Korai dinasztikus időszak (Egyiptom)
+                  A korai dinasztikus időszak hozzávetőlegesen a korai mezopotámiai sumér - akkád civilizáció és az ősi Elam korabeli volt . Az időszámításunk előtti harmadik században élt egyiptomi pap, Manetho a királyok hosszú sorát Menestől saját koráig 30 dinasztiába csoportosította, ez a rendszer ma is használatos. Hivatalos történelmét a "Meni" (vagy görögül Menes) nevű királlyal kezdte, akiről azt hitték, hogy egyesítette Felső- és Alsó-Egyiptom két királyságát .</p>
+                <p class="text" id="text2">...</p>
+                <p class="text" id="text3">...</p>
+                <p class="text" id="text4">...</p>
+                <p class="text" id="text5">....</p>
+              </div>
             </div>
         </div>
     </div>
+    <script>
+      function displayText(buttonNumber) {
+        // Minden elrejtése
+        var texts = document.querySelectorAll('.text');
+        texts.forEach(function(text) {
+          text.style.display = 'none';
+        });
+    
+        // Klikkelésre mutassa a szöveget
+        var textId = 'text' + buttonNumber;
+        var textElement = document.getElementById(textId);
+        if (textElement) {
+          textElement.style.display = 'block';
+        }
+      }
+    </script>
 </body>
 </html> 
