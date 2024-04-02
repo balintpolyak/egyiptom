@@ -1,6 +1,7 @@
 body {
     font-size: 1.5rem;
-    /* background: -webkit-linear-gradient(rgb(209, 166, 67), rgb(190, 114, 0));  */
+    /* background: -webkit-linear-gradient(rgb(209, 166, 67), rgb(190, 114, 0));  */ 
+    background-color: rgb(208, 183, 160);
 }
 h1 {
     text-align: center;
@@ -24,7 +25,7 @@ h3 {
     width: 200px;
     height: 100px;
     padding: 15px;
-    background: linear-gradient(yellow,red);
+    background: linear-gradient(rgb(255, 226, 193),rgb(153, 83, 13));
     margin-bottom: 10px;
     /* opacity: 0.7; */
 }
@@ -55,4 +56,8 @@ a {
 
 .okor{
     scale: 80%;
+    border-radius: 40px;
+    border: 5px solid ;
+    border-color: rgb(73, 62, 13);
 }
+
