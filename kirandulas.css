@@ -1,9 +1,7 @@
 body {
     background-color: white;
 }
-h2 {
-    text-align: center;
-}
+
 .repjegy-kep {
     max-width: 250px;
     max-height: 500px;
@@ -23,7 +21,4 @@ h2 {
 }
 .container {
     max-width: 1400px;
-}
-#szallas {
-    margin-left: 80px;
 }
