@@ -52,10 +52,12 @@ a {
     text-decoration: none;
     color: rgb(73, 62, 13);
 }
+a:hover {
+    color: rgb(153, 83, 13);
+}
 .active {
     display: block;
-  }
-
+}
 .okor{
     scale: 80%;
     border-radius: 40px;
@@ -64,6 +66,17 @@ a {
 }
 
 .videocska{
-    border: 5px solid;
-    border-color: rgb(73, 62, 13);
+    border: 5px solid rgb(73, 62, 13);
+}
+@media screen and (min-width:768px) and (max-width: 992px) {
+    .videocska {
+        width: 600px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .videocska {
+        width: 400px;
+        height: 220px;
+    }
 }
