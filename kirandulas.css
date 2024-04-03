@@ -35,3 +35,8 @@ body {
 #uber-prices {
     margin-left: 52px;
 }
+
+.uber-kep{
+   border: 5px solid rgb(73, 62, 13);
+   border-radius: 50px;
+}
